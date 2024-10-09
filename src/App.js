@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import BookList from './components/BookList';
 import BookSearch from './components/BookSearch';
-import Navbar from './components/Navbar';
+import NavBar from './components/NavBar';
 import FeaturedBooks from './components/FeaturedBooks';
 import './components/HomePage.css';
-import './components/Navbar.css';
+import './components/NavBar.css';
 import { json } from 'react-router';
 
 function App() {
@@ -38,7 +38,7 @@ function App() {
 
     return (
         <div className="App">
-            <Navbar toggleFeaturedBooks={toggleFeaturedBooks} />
+            <NavBar toggleFeaturedBooks={toggleFeaturedBooks} />
             <div className="App-header">
                 <h1 className='find'>Find Your Next Favorite Book Today!</h1>
                 <p className='book'>Books are magic portals, transporting us to new worlds and igniting our imaginations.</p>
